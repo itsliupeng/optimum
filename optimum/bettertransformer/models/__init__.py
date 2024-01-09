@@ -82,7 +82,10 @@ class BetterTransformerManager:
             "MarianAttention": MarianAttentionLayerBetterTransformer,
         },
         "markuplm": {"MarkupLMLayer": BertLayerBetterTransformer},
-        "mbart": {"MBartEncoderLayer": MBartEncoderLayerBetterTransformer},
+        "mbart": {
+            "MBartEncoderLayer": MBartEncoderLayerBetterTransformer,
+            "MBartAttention": BartAttentionLayerBetterTransformer
+        },
         "opt": {"OPTAttention": OPTAttentionLayerBetterTransformer},
         "pegasus": {"PegasusAttention": PegasusAttentionLayerBetterTransformer},
         "rembert": {"RemBertLayer": BertLayerBetterTransformer},
